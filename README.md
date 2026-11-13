@@ -21,7 +21,9 @@ Salus.ai runs a dual-model inference pipeline built on Python, Flask, and PyTorc
 ## Local Setup & Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com
+Open the live app directly:
+https://ngrok-free.dev
+
    cd Salus-AI-
    ```
 2. Create a virtual environment and install dependencies:
