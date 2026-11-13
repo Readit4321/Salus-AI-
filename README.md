@@ -2,8 +2,9 @@
 
 **Salus.ai** is a full-stack, locally hosted AI web and Progressive Web App (PWA) that combines computer vision and natural language processing to estimate meal calories from photos and answer general health questions—without sending sensitive user health data to third-party cloud APIs.
 
-## Demo Video
-> **[Watch the 60-Second Mobile Demo Video Here](PASTE_YOUR_YOUTUBE_LINK_HERE)**
+## Live App & Demo
+* **Live Web App (PWA):** **[https://paradox-equation-dash.ngrok-free.dev](https://paradox-equation-dash.ngrok-free.dev)** *(Hosted locally on Apple Silicon; active whenever the local inference server is running)*
+* **60-Second Mobile Demo:** *Video walkthrough coming soon (installable full-screen via "Add to Home Screen" on iOS & Android).*
 
 ## System Architecture
 Salus.ai runs a dual-model inference pipeline built on Python, Flask, and PyTorch:
@@ -13,7 +14,7 @@ Salus.ai runs a dual-model inference pipeline built on Python, Flask, and PyTorc
 * **Progressive Web App (PWA) Layer:** Configured with a custom `manifest.json`, SVG vector icon, and mobile viewport meta tags so users can install Salus.ai full-screen onto iOS and Android home screens.
 
 ## Engineering Challenges Solved
-1. **Local-to-Public HTTPS Routing:** Exposed a local Flask server (`127.0.0.1:5055`) over encrypted HTTPS tunnels (`HTTP/2`) with `caffeinate` power-management hooks to prevent hardware sleep during active inference.
+1. **Local-to-Public HTTPS Routing:** Exposed a local Flask server (`127.0.0.1:5055`) over an encrypted static HTTPS endpoint (`ngrok`) with `caffeinate` power-management hooks to prevent hardware sleep during active inference.
 2. **SSL & Environment Isolation:** Resolved macOS Python certificate verification (`certifi`) and dependency isolation using a dedicated `.venv` virtual environment.
 3. **Safety & Responsible AI:** Implemented clear medical disclaimers reminding users that outputs are informational estimates rather than clinical advice, alongside a one-click memory reset (`/reset`) for user data control.
 
@@ -21,7 +22,7 @@ Salus.ai runs a dual-model inference pipeline built on Python, Flask, and PyTorc
 1. Clone the repository:
    ```bash
    git clone https://github.com
-   cd salus-ai
+   cd Salus-AI-
    ```
 2. Create a virtual environment and install dependencies:
    ```bash
