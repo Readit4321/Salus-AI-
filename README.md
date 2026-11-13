@@ -22,8 +22,7 @@ Salus.ai runs a dual-model inference pipeline built on Python, Flask, and PyTorc
 1. Clone the repository:
    ```bash
 Open the live app directly:
-https://ngrok-free.dev
-
+https://paradox-equation-dash.ngrok-free.dev
    cd Salus-AI-
    ```
 2. Create a virtual environment and install dependencies:
